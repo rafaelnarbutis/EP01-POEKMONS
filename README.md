@@ -53,9 +53,3 @@ python MapperAverage.py ..\filter\pokemons.csv > average
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-
-
-## Screenshots
-
-![App Screenshot](https://drive.google.com/file/d/1HH7KIQacO6nyh2POC1HEm9nrLRSrAlrv/view?usp=sharing)
-
