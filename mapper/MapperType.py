@@ -11,8 +11,8 @@ class MapperType(MRJob):
         ]
 
     def mapper(self, _, line):
-        if self.isCSVHeader:
-            self.isCSVHeader = False
+        if MapperType.isCSVHeader:
+            MapperType.isCSVHeader = False
         else:
             for l in line.split(']')[1].split('[')[1].split(','):
                 yield l.strip().replace('\'',''), 1

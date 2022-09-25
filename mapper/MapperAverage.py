@@ -12,8 +12,8 @@ class MapperAverage(MRJob):
         ]
 
     def mapper(self, _, line):
-        if self.isCSVHeader:
-            self.isCSVHeader = False
+        if MapperAverage.isCSVHeader:
+            MapperAverage.isCSVHeader = False
         else:
             damages = line.split('\"')[1].replace('\"', '').replace('[', '').replace(']', '').split(',')
             for damage in damages:
